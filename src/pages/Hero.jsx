@@ -33,14 +33,25 @@ export default function Hero() {
 "
     >
       {images.map((img, index) => (
-        <SwiperSlide key={index} className="flex justify-center items-center h-full mt-22">
-          <img
-            src={img}
-            alt={`avenger-${index}`}
-            className="max-h-[85vh] max-w-[90%] object-contain transition-transform duration-300 hover:scale-110 "
-          />
-        </SwiperSlide>
+        // <SwiperSlide key={index} className="flex justify-center items-center h-full mt-22">
+        //   <img
+        //     src={img}
+        //     alt={`avenger-${index}`}
+        //     className="max-h-[85vh] max-w-[90%] object-contain transition-transform duration-300 hover:scale-110 "
+        //   />
+        // </SwiperSlide>
+        <SwiperSlide key={index} className="flex flex-col justify-center items-center h-full mt-22">
+                <div className="relative">
+                    <img
+                        src={img}
+                        alt={`avenger-${index}`}
+                        className="max-h-[85vh] max-w-[90%] object-contain transition-transform duration-300 hover:scale-110"
+                    />
+                    <div className="absolute bottom-0 w-full h-4 bg-gradient-to-t from-black/40 to-transparent blur-md transform translate-y-5 scale-75"></div>
+                </div>
+            </SwiperSlide>
       ))}
     </Swiper>
+    
   </>);
 }

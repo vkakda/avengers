@@ -108,13 +108,13 @@ export default function AvengersSlider() {
       {/* Navigation */}
       <button
         onClick={prevSlide}
-        className="absolute bottom-2 left-100 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
+        className="sm:left-50 md:left-100 sm:bottom-1 md:bottom:2 absolute bottom-50 left-5 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
       >
         <ChevronLeft size={50} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute bottom-2 right-100 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
+        className="sm:right-50 md:right-100 sm:bottom-1 md:bottom:2 absolute bottom-50 right-5 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
       >
         <ChevronRight size={50} />
       </button>

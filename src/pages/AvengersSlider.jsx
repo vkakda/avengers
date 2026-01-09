@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Footer from "./Footer";
 
 const avengers = [
   {
@@ -151,7 +152,7 @@ export default function AvengersSlider() {
                 opacity: { duration: 0.8, ease: "easeInOut" },
                 filter: { duration: 0.8, ease: "easeInOut" }, // <-- blur transition
               }}
-              className="absolute w-[280px] md:w-[320px] h-[340px] md:h-[400px] object-contain rounded-2xl drop-shadow-[0_0_40px_rgba(255,255,255,0.4)]"
+              className="absolute  w-[280px] md:w-[320px] h-[340px] md:h-[400px] object-contain rounded-2xl drop-shadow-[0_0_40px_rgba(255,255,255,0.4)]"
             />
           );
         })}
@@ -211,11 +212,13 @@ export default function AvengersSlider() {
                     {line}.
                   </p>
                 ))}
+                
             </div>
             
           </motion.div>
         </AnimatePresence>
       </div>
+     
     </div>
   );
 }
